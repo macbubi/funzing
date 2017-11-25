@@ -31,6 +31,12 @@ a:active {
   }
 }
 .alerts {
+  line-height: 40px;
+  background-color: #ccc;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
   .notice,
   .alert {
     padding: 0px;
@@ -39,5 +45,15 @@ a:active {
   }
 }
 .main {
-
+  .activity {
+    width: 100%;
+    margin-bottom: 30px;
+    table {
+      background-color: #fff;
+      width: 100%;
+      td {
+        border: 1px solid #000;
+      }
+    }
+  }
 }
