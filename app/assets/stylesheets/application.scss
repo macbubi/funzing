@@ -1,1 +1,21 @@
 @import "bootstrap";
+
+$background-color: #eee;
+$text-color: black;
+
+
+.body {
+  background-color: $background-color;
+  .top-nav {
+    background-color: purple;
+    height: 120px;
+    .logo {
+      font-size: 40px;
+      color: white;
+      padding-top: 30px;
+    }
+  }
+  .main {
+
+  }
+}

@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171125161729) do
+ActiveRecord::Schema.define(version: 20171125163041) do
+
+  create_table "activities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "title"
+    t.text     "desc",              limit: 65535
+    t.string   "owner"
+    t.float    "price",             limit: 24
+    t.integer  "max_attendies"
+    t.integer  "current_attendies"
+    t.date     "date"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "email",                  default: "", null: false

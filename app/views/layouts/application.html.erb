@@ -9,8 +9,25 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+
+    <div class="body">
+      <div class="top-nav container-fluid">
+        <!-- top nav -->
+        <div class="logo">
+          Mini Funzing
+        </div>
+      </div>
+      <div class="alerts container-fluid">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+      <div class="main container-fluid">
+        <!-- main content -->
+        <%= yield %>
+      </div>
+    </div>
+
+
   </body>
 </html>
