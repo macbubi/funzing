@@ -3,19 +3,41 @@
 $background-color: #eee;
 $text-color: black;
 
-
-.body {
+body {
   background-color: $background-color;
-  .top-nav {
-    background-color: purple;
-    height: 120px;
-    .logo {
-      font-size: 40px;
-      color: white;
-      padding-top: 30px;
-    }
+}
+a,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+.top-nav {
+  background-color: purple;
+  height: 120px;
+  .logo {
+    font-size: 40px;
+    color: white;
+    padding-top: 30px;
+    float: left;
   }
-  .main {
+  .user-buttons {
+    float: right;
+    margin-top: 25px;
+    padding: 0px 20px;
+    line-height: 60px;
+    height: 60px;
+    background-color: $background-color;
+  }
+}
+.alerts {
+  .notice,
+  .alert {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
+}
+.main {
 
-  }
 }
