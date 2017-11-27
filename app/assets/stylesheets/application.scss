@@ -30,6 +30,26 @@ a:active {
     background-color: $background-color;
   }
 }
+.links {
+  display: block;
+  height: 50px;
+  a {
+    display: inline-block;
+    float: left;
+    width: auto;
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px;
+    padding: 0px 10px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+  }
+  a:hover {
+    background-color: #989898;
+  }
+}
 .alerts {
   line-height: 40px;
   background-color: #ccc;
@@ -45,15 +65,30 @@ a:active {
   }
 }
 .main {
+  table {
+    width: 100%;
+    background-color: #fff;
+    td {
+      border: 1px solid #000;
+    }
+  }
   .activity {
     width: 100%;
     margin-bottom: 30px;
     table {
-      background-color: #fff;
       width: 100%;
       td {
         border: 1px solid #000;
       }
+    }
+  }
+  .activity-page {
+    .right-section {
+      float: right;
+      display: inline-block;
+    }
+    .left-section {
+      display: inline-block;
     }
   }
 }

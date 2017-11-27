@@ -5,8 +5,11 @@ class ActivitiesController < ApplicationController
   end
 
   def show
-    debugger
-    # @activity = Activity.find_by_id(params.id)
+    @activity = Activity.all_active_activities.find_by_id(params[:id])
+    if @activity == nil
+      flash[:alert] = "There is no such activity."
+      redirect_to :root
+    end
   end
 
 end

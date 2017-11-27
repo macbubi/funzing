@@ -1,0 +1,21 @@
+<div class="col-xs-12 col-sm-8">
+
+  <table>
+    <tr><td>
+      <h4># Order <%= @order.id %></h4>
+      <h3><%= @activity.title %></h3>
+    </td></tr>
+    <tr><td>
+      <span>Hosted by <%= @activity.owner %></span>
+    </td></tr>
+    <tr><td>
+      <h5><%= @activity.date_formatted %></h5>
+      <p><%= @order.tickets %> Tickets</p>
+      <p>Total price: <%= @order.total_price %>$</p>
+    </td></tr>
+
+  </table>
+
+
+
+</div>

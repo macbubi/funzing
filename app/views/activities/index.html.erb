@@ -4,8 +4,8 @@
     <a href="<%= activity_path(activity) %>" class="activity col-xs-12 col-sm-6 col-lg-4">
       <table>
         <tr><td><h3><%= activity.title %></h3></td></tr>
-        <tr><td><div><%= activity.date %></div></td></tr>
-        <tr><td><div><%= activity.price %>$ per ticket</div></td></tr>
+        <tr><td><div><%= activity.date_formatted %></div></td></tr>
+        <tr><td><div><%= activity.price_with_text %></div></td></tr>
       </table>
     </a>
 

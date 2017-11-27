@@ -12,9 +12,11 @@
 
     <div class="top-nav container-fluid">
       <!-- top nav -->
-      <div class="logo">
-        Mini Funzing
-      </div>
+      <a href="/">
+        <div class="logo">
+          Mini Funzing
+        </div>
+      </a>
       <div class="user-buttons">
         <%= link_to "Login", user_session_path %>
         /
@@ -23,6 +25,7 @@
         <%= link_to "Logout", destroy_user_session_path, method: :delete %>
       </div>
     </div>
+    <%= render partial: "layouts/nav" if user_signed_in? %>
     <div class="alerts container-fluid">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
