@@ -7,11 +7,14 @@
     <tr><td><p><%= @activity.desc %></p></td></tr>
   </table>
 </div>
+
 <div class="right-section col-xs-12 col-sm-4">
   <%= form_for Order.new do |f| %>
   <%= f.hidden_field(:activity_id, value: @activity.id) %>
   <table>
     <tr><td>
+      <div class="right-section-inner">
+
         <h4><%= @activity.date_formatted %></h4>
         <div><%= @activity.price_with_text %></div>
         <div>
@@ -20,6 +23,8 @@
           <%= f.number_field(:tickets, in: 1..@activity.available_tickets, step: 1, value: 1, class: "form-control") %>
         </div>
         <%= f.submit("Book Now!", class: "book-now") %>
+        
+      </div>
     </td></tr>
   </table>
 

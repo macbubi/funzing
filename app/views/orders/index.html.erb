@@ -4,13 +4,19 @@
     <tr><td>
       <h3>My Orders</h3>
     </td></tr>
-    <% @orders.each do |order| %>
-      <tr>
-        <td>
-          <%= link_to "#Order #{order.id} - #{order.activity.title}", order_path(order) %>
-        </td>
-      </tr>
+
+    <% if @orders.size == 0 %>
+      <tr><td>There are no orders yet.</td></tr>
+    <% else %>
+      <% @orders.each do |order| %>
+        <tr>
+          <td>
+            <%= link_to "#Order #{order.id} - #{order.activity.title}", order_path(order) %>
+          </td>
+        </tr>
+      <% end %>
     <% end %>
+    
   </table>
 
 </div>

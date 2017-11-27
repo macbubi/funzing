@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 $background-color: #eee;
-$text-color: black;
+$main-color: purple;
 
 body {
   background-color: $background-color;
@@ -13,7 +13,7 @@ a:active {
   text-decoration: none;
 }
 .top-nav {
-  background-color: purple;
+  background-color: $main-color;
   height: 120px;
   .logo {
     font-size: 40px;
@@ -86,6 +86,17 @@ a:active {
     .right-section {
       float: right;
       display: inline-block;
+      .right-section-inner {
+        padding: 25px;
+      }
+      .book-now {
+        width: 100%;
+        background-color: $main-color;
+        border: 1px solid #000;
+        color: #fff;
+        height: 50px;
+        margin-top:25px;
+      }
     }
     .left-section {
       display: inline-block;
