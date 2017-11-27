@@ -1,9 +1,7 @@
 class Activity < ApplicationRecord
 
-  belongs_to :order
-
-  def self.all_active_activities
-    all.where("date > ?", Time.now).where("max_attendies > current_attendies")
+  def self.all_active_activities_sorted
+    all.where("date > ?", Time.now).where("max_attendies > current_attendies").order("date")
   end
 
   def available_tickets

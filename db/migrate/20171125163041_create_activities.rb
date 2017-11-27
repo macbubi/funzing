@@ -7,7 +7,7 @@ class CreateActivities < ActiveRecord::Migration[5.0]
       t.float :price
       t.integer :max_attendies
       t.integer :current_attendies
-      t.date :date
+      t.datetime :date
 
       t.timestamps
     end
